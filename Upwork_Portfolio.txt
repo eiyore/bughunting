@@ -1,0 +1,38 @@
+CANNOT RESUME PICKUP DATE SELECTION ON STORE PICKUP PAGE AFTER CHANGING PICKUP ADDRESS AND CLICKING "CONTINUE"
+
+SECTION
+Pickup Reservation Page
+
+SEVERITY
+High
+
+AFFECTED URL
+https://qa.---.com/storepickup
+
+STEPS TO REPRODUCE
+1. Open the homepage https://qa.---.com
+2. Click "Reserve Now" widget in the header
+3. From the drop-down options, click Pickup > Update my pickup
+4. On the pickup location page, click the pencil icon to edit/update pickup address
+5. Click "Continue" to return to store pickup page
+6. Scroll down to "Pickup window" section
+7. Attempt to select a pickup date
+
+ACTUAL RESULTS
+After editing pickup address and returning to store pickup page, all previously available future dates are greyed-out and user cannot resume to select a pickup date
+
+EXPECTED RESULTS
+The user should be able to resume date selection (on store pickup page) after returning from editing pickup address
+
+REPRODUCIBILITY RATE
+5/5
+
+ATTACHMENTS
+Screencast (mp4 video)
+
+========================================================================================================
+Comments
+I was able to reproduce on stage. Will report it as a defect on PROD.
+Thank you for reporting.
+
+Maria I. (Client)
